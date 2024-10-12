@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    color: sandybrown;
+}
+
+.navigation {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 40px 20px 20px;
+}
+
+/* All of our navigation css to properly add animation */
+.navigation a {
+    position: relative;
+    font-size: 1.25em;
+    color: peru;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 30px;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: peru;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+}
+
+.navigation a:first-child {
+    margin-left: 0; /* Remove margin for the first link to avoid extra space */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5dc;
+}
+
+h1 {
+    margin: 20px 30px 10px 20px;
+}
+
+.header-text {
+    text-align: center;
+    margin: 50px 0;
+    font-size: 2em; 
+    font-weight: bold; 
+    padding: 20px; 
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+}
+
+.header-text span {
+    color: darkslategrey;
+}
+
+.row {
+    display: flex;           
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.about-col-1 img {
+    display: flex;
+    margin-left: auto;
+    margin-right: 130px;
+    max-width: 28%; 
+    height: auto;     
+    border-radius: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-col-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 50px;
+}
+
+.descript {
+    font-size: 50px;
+    font-weight: 600;
+}
+
+
+
+#header {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    margin-top: 50px;
+}

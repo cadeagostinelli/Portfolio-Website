@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>My Website</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navigation"> <!-- Hrefs to all of our separate pages -->
+            <a href="{{ url_for('About Me') }}">About Me</a>
+            <a href="{{ url_for('Projects') }}">Projects</a>
+            <a href="{{ url_for('Experience') }}">Experience</a>
+            <a href="{{ url_for('Education') }}">Education</a>
+            <a href="{{ url_for('Contact') }}">Contact</a>
+        </nav>
+    </header>
+    <div class="header-text"> 
+        <h1>Hey! I'm <span>Cade</span> Agostinelli.</h1>
+    </div>
+    <div id="About Me">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-2">
+                    <h1 class="descript">About Me</h1>
+                    <p>
+                        I'm a Bachelors student at Mississippi State University in my third-year. 
+                        Since participating in my first coding competition 7 years ago, I have focused on developing my skillset and gaining hands-on experience.  
+                        I have interned with the startup Fractal Networks here in Starkville, where I worked on creating unit tests for their client and as a full-stack developer for their application. 
+                    </p>
+                    <p>
+                        In my free time, I enjoy working out and playing basketball. 
+                        I also enjoy painting and learning to play jazz keyboard. 
+                    </p>
+                </div>
+                <div class="about-col-1">
+                    <img src="../images/IMG_0588 (1).JPG">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>
