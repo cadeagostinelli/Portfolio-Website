@@ -56,6 +56,7 @@ h1 {
 }
 
 .header-text {
+    color: sandybrown;
     text-align: center;
     margin: 50px 0;
     font-size: 2em; 
@@ -65,38 +66,208 @@ h1 {
     border-radius: 10px;
 }
 
+.header-text p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex; /* Use flexbox to align buttons in a row */
+    justify-content: center; /* Center the buttons horizontally */
+    align-items: center; /* Center the buttons vertically */
+    margin-top: 15px; /* Add space above buttons */
+}
+
+.button {
+    display: inline-block; /* Make buttons inline */
+    padding: 10px 20px; /* Add padding */
+    margin: 5px; /* Add space between buttons */
+    border: 2px solid #c0b7a2; /* Border color */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    color: #c0b7a2; /* Text color */
+    background-color: transparent; /* Background color */
+    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+}
+
+.button:hover {
+    background-color: #c0b7a2; /* Change background on hover */
+    color: white; /* Change text color on hover */
+}
+
 .header-text span {
-    color: darkslategrey;
+    color: peru;
+}
+
+.icon-button {
+    display: flex; /* Use flexbox for the icon button */
+    justify-content: center; /* Center the icon inside the button */
+    align-items: center; /* Center vertically */
+    width: 40px;
+    height: 40px;
+    margin: 0 5px; /* Use horizontal margin for spacing */
+    border: 2px solid #c0b7a2;
+    border-radius: 50%;
+    color: #c0b7a2;
+    font-size: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.icon-button i {
+    vertical-align: middle; /* Ensures the icon is vertically aligned */
+}
+
+.icon-button:hover {
+    background-color: #c0b7a2;
+    color: white;
+}
+
+/* This ensures the icons display inline instead of stacking vertically */
+.icon-container {
+    text-align: center; /* Center the icon buttons if necessary */
 }
 
 .row {
-    display: flex;           
+    display: flex;            
     justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-
-.about-col-1 img {
-    display: flex;
-    margin-left: auto;
-    margin-right: 130px;
-    max-width: 28%; 
-    height: auto;     
-    border-radius: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    align-items: flex-start; 
+    margin: 20px;
 }
 
 .about-col-2 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    margin-left: 50px;
+    flex-basis: 60%; 
+    padding-right: 20px;
+}
+
+.about-col-1 {
+    flex-basis: 40%; /* Adjust to ensure it fits nicely with the text column */
+}
+
+.about-col-1 img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 20px; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.about-col-2 {
+    flex: 1;                  
+    padding-right: 20px;      
+    max-width: 600px;         /* Limit width for the entire text column */
+    width: 100%;                   
+    margin-left: 50px;           
 }
 
 .descript {
-    font-size: 50px;
-    font-weight: 600;
+    font-size: 3em;           /* Increase size for the heading */
+    color: darkslategrey;     /* Change the color */
+    margin-bottom: 20px;      /* Add space below the heading */
+}
+
+.paragraph {
+    font-size: 1.2em;
+    font-weight: 400;
+    max-width: 600px;
+    line-height: 1.6; 
+    margin: 10px 0;
+    color: darkslategrey; 
+}
+
+
+
+
+/* PROJECT CARDS */
+
+.projects-header {
+    font-size: 3em;
+    color: darkslategrey;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    gap: 20px; /* Add space between cards */
+}
+
+.project-card {
+    width: 80%; /* Adjust the width to fit your desired layout */
+    max-width: 400px; /* Set a maximum width for responsiveness */
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    background-color: #D8CBAF;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Rounded edges */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    margin: 40px;
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    max-height: 200px; 
+    border-radius: 10px 10px 0 0; /* Rounded top corners */
+    transition: transform 0.3s ease; /* Smooth hover effect */
+    object-fit: cover;
+}
+
+.project-card:hover {
+    transform: translateY(-10px); /* Lift the card up slightly */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+}
+
+.project-card:hover img {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+}
+
+
+.project-card-content {
+    padding: 20px;
+    color: darkslategrey;
+}
+
+.project-card-content h3 {
+    font-size: 20px; /* Make heading readable */
+    margin-bottom: 10px;
+    color: darkslategrey;
+}
+
+.project-card-content p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    color: darkslategrey;
+}
+
+.project-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.project-card ul li {
+    display: inline-block;
+    margin-right: 3px;
+    padding: 5px 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    color: darkslategrey;
+}
+
+.icon-button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px; /* Adds space between button and content */
 }
 
 

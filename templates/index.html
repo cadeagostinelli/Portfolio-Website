@@ -6,32 +6,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>My Website</title>
     <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav class="navigation"> <!-- Hrefs to all of our separate pages -->
-            <a href="{{ url_for('About Me') }}">About Me</a>
-            <a href="{{ url_for('Projects') }}">Projects</a>
-            <a href="{{ url_for('Experience') }}">Experience</a>
-            <a href="{{ url_for('Education') }}">Education</a>
-            <a href="{{ url_for('Contact') }}">Contact</a>
+            <a href="#about">About Me</a>
+            <a href="#projects">Projects</a>
+            <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
         </nav>
     </header>
     <div class="header-text"> 
         <h1>Hey! I'm <span>Cade</span> Agostinelli.</h1>
+        <p>Full-Stack Development, Machine Learning, Data Analytics, Unit Testing</p>
+        <div class="button-container">
+            <a href="../images/Resume.pdf" class="button">Resume</a>
+            <a href="https://github.com/cadeagostinelli" class="icon-button">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/cade-agostinelli/" class="icon-button">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
     </div>
-    <div id="About Me">
+    
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-2">
                     <h1 class="descript">About Me</h1>
-                    <p>
-                        I'm a Bachelors student at Mississippi State University in my third-year. 
+                    <p class="paragraph"> 
+                        I'm a Bachelors student studying Computer Science at Mississippi State University in my third-year. 
                         Since participating in my first coding competition 7 years ago, I have focused on developing my skillset and gaining hands-on experience.  
                         I have interned with the startup Fractal Networks here in Starkville, where I worked on creating unit tests for their client and as a full-stack developer for their application. 
                     </p>
-                    <p>
-                        In my free time, I enjoy working out and playing basketball. 
+                    <p class="paragraph"> 
+                        In my free time, I enjoy working out, playing sports like basketball, hiking, and being outdoors. 
                         I also enjoy painting and learning to play jazz keyboard. 
                     </p>
                 </div>
@@ -39,6 +56,28 @@
                     <img src="../images/IMG_0588 (1).JPG">
                 </div>
             </div>
+        </div>
+    </div>
+    <div id="projects">
+        <div class="projects-container">
+            <h1 class="projects-header">Projects</h1>
+            <div class="project-card">
+                <img src="../images/financeimageforport.png" class="project-card-image" alt="Finance Guru">
+                <div class="project-card-content">
+                    <h3>Finance Guru</h3>
+                    <p>Finance Guru is a full-stack application aimed at organizing users' financial data utilizing an excel sheet to give them relevant visualizations.</p>
+                    <ul class="technologies">
+                        <li>Python</li>
+                        <li>HTML/CSS</li>
+                        <li>Pandas</li>
+                        <li>Matplot</li>
+                    </ul>
+                    <a href="https://github.com/cadeagostinelli/Finance-guru" class="icon-button">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <!-- Repeat for other projects -->
         </div>
     </div>
     <script src="../script.js"></script>
