@@ -7,15 +7,10 @@
     <title>My Website</title>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <style>
-        html {
-            scroll-behavior: smooth;
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <nav class="navigation"> <!-- Hrefs to all of our separate pages -->
+    <header class="fade-move-in">
+        <nav class="navigation">
             <a href="#about">About Me</a>
             <a href="#projects">Projects</a>
             <a href="#experience">Experience</a>
@@ -23,7 +18,8 @@
             <a href="#contact">Contact</a>
         </nav>
     </header>
-    <div class="header-text"> 
+    
+    <div class="header-text fade-move-in"> 
         <h1>Hey! I'm <span>Cade</span> Agostinelli.</h1>
         <p>Full-Stack Development, Machine Learning, Data Analytics, Unit Testing</p>
         <div class="button-container">
@@ -37,7 +33,7 @@
         </div>
     </div>
     
-    <div id="about">
+    <div id="about" class="fade-move-in">
         <div class="container">
             <div class="row">
                 <div class="about-col-2">
@@ -58,7 +54,8 @@
             </div>
         </div>
     </div>
-    <div id="projects">
+
+    <div id="projects" class="fade-move-in">
         <div class="projects-container">
             <h1 class="projects-header">Projects</h1>
             <div class="project-card">
@@ -78,24 +75,23 @@
                 </div>
             </div>
             <div class="project-card">
-                <img src="../images/drowsydriving.png" class="project-card-image" alt="Finance Guru">
+                <img src="../images/drowsydriving.png" class="project-card-image" alt="Drowsy Driving Prototype">
                 <div class="project-card-content">
                     <h3>Drowsy Driving Prototype</h3>
-                    <p>Year long project where I worked with a team to develop a product from scratch to address the issue of drowsy driving.</p>
+                    <p>Year long project where I worked with a team to develop a product from scratch to address the issue of drowsy driving through our prototype.</p>
                     <ul class="technologies">
                         <li>C++</li>
                         <li>Arduino</li>
                         <li>Circuit Boarding</li>
                     </ul>
-                    <a href="https://shorturl.at/aS6CV" class="icon-button">
-                    </a>
+                    <a href="https://shorturl.at/aS6CV" class="icon-button"></a>
                 </div>
             </div>
             <div class="project-card">
-                <img src="../images/ecommercesnip.png" class="project-card-image" alt="Finance Guru">
+                <img src="../images/ecommercesnip.png" class="project-card-image" alt="Ecommerce Backend">
                 <div class="project-card-content">
                     <h3>Ecommerce Backend</h3>
-                    <p>Created the backend of an ecommerce website using SQLite for data management and database methods</p>
+                    <p>Created the backend of an ecommerce website using SQLite for data management, while employing agile methodology with team.</p>
                     <ul class="technologies">
                         <li>Python</li>
                         <li>SQLite</li>
@@ -108,15 +104,15 @@
             </div>
         </div>
     </div>
+
     <h1 class="projects-header">Experience</h1>
-    <div id="experience">
+    <div id="experience" class="fade-move-in">
         <div class="experience-container">
             <div class="job-buttons">
                 <button class="job-button" onclick="showDescription('job1')">Software Engineer Intern</button>
                 <button class="job-button" onclick="showDescription('job2')">STEM Teacher</button>
             </div>
             <div class="job-description" id="job-description">
-                <!-- Display first job initially so it isn't empty -->
                 <h2 class="job-title">Software Engineer Intern<span class="company">@ Fractal Networks</span></h2>
                 <p class="dates">Jan 2024 - Apr 2024</p>
                 <ul class="job-responsibilities">
@@ -133,14 +129,34 @@
             </div>
         </div>
     </div>
-    <div id="education">
+
+    <div id="education" class="fade-move-in">
+        <h1 class="education-top">Education</h1>
         <div class="education-container">
-            <h1 class="projects-header">Education</h1>
+            <h1 class="edu-header">
+                <span class="degree">Bachelors in Computer Science</span>
+                <span class="expected-date">Expected 2026</span>
+            </h1>
             <div class="edu-description" id="edu-description">
-                <h2 class="edu-title"><span class="major">Computer Science</span></h2>
+                <h2 class="university">Mississippi State University</h2>
+                <p class="gpa">GPA: 3.75</p>
+                <h3 class="extracurricular-header">Extracurriculars</h3>
+                <ul class="extracurriculars-list">
+                    <li>Space Cowboys</li>
+                    <li>Artificial Intelligence Club</li>
+                </ul>
             </div>
         </div>
     </div>
+
+    <div id="contact" class="fade-move-in">
+        <h1 class="contact-top">Contact</h1>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:cadeagostinelli@gmail.com" class="contact-link">cadeagostinelli@gmail.com</a></p>
+            <p>Phone: <a href="tel:+16019859549" class="contact-link">+1 (601) 985-9549</a></p>
+        </div>
+    </div>
+
     <script src="../script.js"></script>
 </body>
 </html>

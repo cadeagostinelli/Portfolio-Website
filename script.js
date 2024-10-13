@@ -2,6 +2,45 @@ document.addEventListener("DOMContentLoaded", function() {
     console.log("Website loaded successfully!");
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const fadeMoveElements = document.querySelectorAll('.fade-move-in');
+
+    const observer = new IntersectionObserver(entries => {
+        // For each entry we implement
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    });
+
+    fadeMoveElements.forEach(el => {
+        observer.observe(el);
+    });
+});
+
+document.addEventListener("DOMContentLoaded", function() {
+    const navLinks = document.querySelectorAll('nav a');
+
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            
+            // Get the target section's ID
+            const targetId = this.getAttribute('href'); 
+            // Select the target section
+            const targetElement = document.querySelector(targetId); 
+
+            // Scroll to the target section smoothly
+            targetElement.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
+        });
+    });
+});
+
+
 
 function showDescription(job) {
     const descriptionElement = document.getElementById('job-description');

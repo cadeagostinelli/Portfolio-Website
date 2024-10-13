@@ -1,9 +1,35 @@
+/* Class for fade-in animation */
+.fade-move-in {
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+/* When the element is in view, apply */
+.fade-move-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* Keyframes for the fade-in animation */
+@keyframes fadeInAnimation {
+    to {
+        opacity: 1;
+    }
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
-    color: sandybrown;
+    color: rgba(236, 171, 106, 0.836);
 }
 
 .navigation {
@@ -12,11 +38,11 @@
     padding: 20px 40px 20px 20px;
 }
 
-/* All of our navigation css to properly add animation */
+/* NAVIGATION */
 .navigation a {
     position: relative;
     font-size: 1.25em;
-    color: peru;
+    color: rgba(236, 171, 106, 0.836);
     text-decoration: none;
     font-weight: 600;
     margin-left: 30px;
@@ -29,7 +55,7 @@
     bottom: -6px;
     width: 100%;
     height: 3px;
-    background: peru;
+    background: rgba(236, 171, 106, 0.836);;
     border-radius: 5px;
     transform: scaleX(0);
     transition: transform .5s;
@@ -41,7 +67,7 @@
 }
 
 .navigation a:first-child {
-    margin-left: 0; /* Remove margin for the first link to avoid extra space */
+    margin-left: 0; 
 }
 
 body {
@@ -72,40 +98,40 @@ h1 {
 }
 
 .button-container {
-    display: flex; /* Use flexbox to align buttons in a row */
-    justify-content: center; /* Center the buttons horizontally */
-    align-items: center; /* Center the buttons vertically */
-    margin-top: 15px; /* Add space above buttons */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 15px; 
 }
 
 .button {
-    display: inline-block; /* Make buttons inline */
-    padding: 10px 20px; /* Add padding */
-    margin: 5px; /* Add space between buttons */
-    border: 2px solid #c0b7a2; /* Border color */
-    border-radius: 5px; /* Rounded corners */
-    text-decoration: none; /* Remove underline */
-    color: #c0b7a2; /* Text color */
-    background-color: transparent; /* Background color */
-    transition: background-color 0.3s, color 0.3s; /* Transition effects */
+    display: inline-block; 
+    padding: 10px 20px; 
+    margin: 5px; 
+    border: 2px solid #c0b7a2;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #c0b7a2; 
+    background-color: transparent;
+    transition: background-color 0.3s, color 0.3s; 
 }
 
 .button:hover {
-    background-color: #c0b7a2; /* Change background on hover */
-    color: white; /* Change text color on hover */
+    background-color: #c0b7a2; 
+    color: white;
 }
 
 .header-text span {
-    color: peru;
+    color: rgba(236, 171, 106, 0.836);;
 }
 
 .icon-button {
-    display: flex; /* Use flexbox for the icon button */
-    justify-content: center; /* Center the icon inside the button */
-    align-items: center; /* Center vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
     width: 40px;
     height: 40px;
-    margin: 0 5px; /* Use horizontal margin for spacing */
+    margin: 0 5px;
     border: 2px solid #c0b7a2;
     border-radius: 50%;
     color: #c0b7a2;
@@ -116,7 +142,7 @@ h1 {
 }
 
 .icon-button i {
-    vertical-align: middle; /* Ensures the icon is vertically aligned */
+    vertical-align: middle;
 }
 
 .icon-button:hover {
@@ -124,9 +150,9 @@ h1 {
     color: white;
 }
 
-/* This ensures the icons display inline instead of stacking vertically */
+
 .icon-container {
-    text-align: center; /* Center the icon buttons if necessary */
+    text-align: center;
 }
 
 .row {
@@ -142,7 +168,8 @@ h1 {
 }
 
 .about-col-1 {
-    flex-basis: 40%; /* Adjust to ensure it fits nicely with the text column */
+    flex-basis: 40%;
+    margin-right: -40px;
 }
 
 .about-col-1 img {
@@ -156,15 +183,16 @@ h1 {
 .about-col-2 {
     flex: 1;                  
     padding-right: 20px;      
-    max-width: 600px;         /* Limit width for the entire text column */
+    max-width: 600px;        
     width: 100%;                   
-    margin-left: 50px;           
+    margin-left: 180px; 
+    margin-top: 50px;          
 }
 
 .descript {
-    font-size: 3em;           /* Increase size for the heading */
-    color: darkslategrey;     /* Change the color */
-    margin-bottom: 20px;      /* Add space below the heading */
+    font-size: 3em;         
+    color: darkslategrey;   
+    margin-bottom: 20px;    
 }
 
 .paragraph {
@@ -187,25 +215,26 @@ h1 {
     width: 100%;
     margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .projects-container {
     display: flex;
-    justify-content: space-between; /* Center the cards horizontally */
-    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
-    gap: 20px; /* Add space between cards */
+    justify-content: space-between; 
+    flex-wrap: wrap; 
+    gap: 15px; 
 }
 
 .project-card {
-    width: 80%; /* Adjust the width to fit your desired layout */
-    max-width: 400px; /* Set a maximum width for responsiveness */
+    width: 80%;
+    max-width: 400px; 
     flex-direction: column;
     flex: 1 1 calc(33.33% - 40px); 
     border: 1px solid #ccc;
     background-color: #D8CBAF;
     overflow: hidden;
     box-shadow: 0 2px 4px rgba(10, 80, 100, 0.16);
-    border-radius: 10px; /* Rounded edges */
+    border-radius: 10px; 
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin: 40px;
 }
@@ -214,14 +243,14 @@ h1 {
     width: 100%;
     height: auto;
     max-height: 200px; 
-    border-radius: 10px 10px 0 0; /* Rounded top corners */
-    transition: transform 0.3s ease; /* Smooth hover effect */
+    border-radius: 10px 10px 0 0;
+    transition: transform 0.3s ease; 
     object-fit: cover;
 }
 
 .project-card:hover {
     transform: translateY(-10px); /* Lift the card up slightly */
-    box-shadow: 0 8px 16px rgba(10, 80, 100, 0.2); /* Add a shadow on hover */
+    box-shadow: 0 8px 16px rgba(10, 80, 100, 0.2); 
 }
 
 .project-card:hover img {
@@ -235,7 +264,7 @@ h1 {
 }
 
 .project-card-content h3 {
-    font-size: 20px; /* Make heading readable */
+    font-size: 20px;
     margin-bottom: 10px;
     color: darkslategrey;
 }
@@ -268,25 +297,25 @@ h1 {
     background-color: #333;
     color: #fff;
     text-decoration: none;
-    margin-top: 10px; /* Adds space between button and content */
+    margin-top: 10px; 
 }
 
 
 
 /* EXPERIENCE SECTION */
 
-/* Center the experience container */
+
 .experience-container {
-    max-width: 800px; /* Set a maximum width for better readability */
-    margin: 0 auto; /* Center the container horizontally */
-    height: 500px; /* Extend height for more space */
-    padding: 20px; /* Add some padding */
+    max-width: 800px; 
+    margin: 0 auto; 
+    height: 500px; 
+    padding: 20px; 
     margin-top: 50px;
     margin-bottom: 70px;
-    background-color: #D8CBAF; /* Same background as projects */
+    background-color: #D8CBAF; 
     border-radius: 20px;
 
-    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16); /* Shadow for depth */
+    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16); 
 }
 
 /* Centered header */
@@ -296,7 +325,7 @@ h1 {
     color: darkslategrey;
 }
 
-/* Job buttons styling */
+
 .job-buttons {
     text-align: center;
     margin-bottom: 20px;
@@ -317,44 +346,44 @@ h1 {
     color: white;
 }
 
-/* Job description styling */
+
 .job-description {
-    text-align: left; /* Align left for description text */
+    text-align: left; 
     font-size: 1.1em;
     color: darkslategrey;
     transition: opacity 0.3s;
 }
 
-/* Job title and company styling */
+
 .job-title {
     font-size: 1.5em;
     color: darkslategrey;
     font-weight: bold;
-    margin-bottom: 5px; /* Add spacing between title and company */
+    margin-bottom: 5px; 
 }
 
 .company {
     font-size: 0.9em;
-    color: grey; /* Lighter text color for the company */
-    margin-left: 10px; /* Small space between title and company */
+    color: grey; 
+    margin-left: 10px; 
 }
 
-/* Dates styling */
+
 .dates {
     font-size: 0.9em;
     color: darkslategrey;
-    margin-bottom: 10px; /* Space between dates and description */
+    margin-bottom: 10px; 
 }
 
 /* Bullet points for job responsibilities */
 ul.job-responsibilities {
     list-style-type: disc; /* Default bullet points */
-    padding-left: 20px; /* Indent the bullet points */
+    padding-left: 20px; 
     margin-top: 10px;
 }
 
 ul.job-responsibilities li {
-    margin-bottom: 10px; /* Space between bullet points */
+    margin-bottom: 10px; 
     color: darkslategrey;
 }
 
@@ -367,15 +396,129 @@ ul.job-responsibilities li {
 
 /* EDUCATION */
 
-.education-container {
-    max-width: 1000px; /* Set a maximum width for better readability */
-    margin: 0 auto; /* Center the container horizontally */
-    height: 500px; /* Extend height for more space */
-    padding: 20px; /* Add some padding */
-    background-color: #D8CBAF; /* Same background as projects */
-    border-radius: 20px;
-    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16); /* Shadow for depth */
+.education-top {
+    font-size: 3em;
+    color: darkslategrey;
+    width: 100%;
+    margin-bottom: 60px;
+    text-align: center;
 }
+
+
+.education-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #D8CBAF;
+    border-radius: 10px;
+    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16);
+}
+
+/* Degree and expected date on same line */
+.edu-header {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: darkslategrey;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-right: 20px;
+}
+
+.degree {
+    color: darkslategrey;
+    display: inline-block;
+    margin-left: -20px;
+    text-align: left;
+}
+
+.expected-date {
+    font-size: 0.6em;
+    font-weight: 50;
+    color: darkslategrey;
+}
+
+
+.university {
+    font-size: 1.2em;
+    color: maroon;
+    margin-bottom: 5px;
+}
+
+
+.gpa {
+    font-size: 1em;
+    color: darkslategrey;
+    margin-bottom: 15px;
+}
+
+
+.extracurricular-header {
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: darkslategrey;
+}
+
+
+.extracurriculars-list {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 1em;
+    color: darkslategrey;
+}
+
+.extracurriculars-list li {
+    margin-bottom: 8px;
+    color: darkslategrey;
+}
+
+
+/* CONTACT */
+
+.contact-top {
+    font-size: 3em;
+    color: darkslategrey;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+    margin-top: 70px;
+}
+
+.contact-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #D8CBAF; 
+    border-radius: 10px;
+    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16); 
+    text-align: center; 
+}
+
+
+
+.contact-info p {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    color: darkslategrey;
+    text-align: center;
+}
+
+
+.contact-link {
+    color: darkslategrey;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contact-link:hover {
+    color: darkblue;
+}
+
 
 
 
