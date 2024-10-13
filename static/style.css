@@ -349,7 +349,7 @@ h1 {
 
 .job-description {
     text-align: left; 
-    font-size: 1.1em;
+    font-size: 0.8em;
     color: darkslategrey;
     transition: opacity 0.3s;
 }
