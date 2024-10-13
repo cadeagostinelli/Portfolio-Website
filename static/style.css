@@ -579,22 +579,27 @@ ul.job-responsibilities li {
         font-size: 1em; /* Smaller font size */
     }
 
-    .about-me {
+    #about .container {
         display: flex; /* Use flexbox layout */
         flex-direction: column; /* Stack elements vertically */
         align-items: center; /* Center align items */
         text-align: center; /* Center text */
-        padding: 10px; /* Add some padding for better spacing */
+    }
+
+    /* Adjust the columns */
+    .about-col-1, .about-col-2 {
+        width: 100%; /* Make columns full width */
+        margin: 10px 0; /* Add some spacing between columns */
     }
 
     /* Adjust paragraphs in About Me */
-    .about-me p {
-        margin: 5px 0; /* Reduce margin between paragraphs */
+    .paragraph {
+        margin: 10px 0; /* Adjust margin for better spacing */
         font-size: 1rem; /* Ensure font size is appropriate for mobile */
     }
 
     /* Adjust image in About Me */
-    .about-me img {
+    .about-col-1 img {
         width: 100%; /* Make image full width */
         max-width: 300px; /* Optional: limit max width of the image */
         height: auto; /* Maintain aspect ratio */
