@@ -565,13 +565,30 @@ ul.job-responsibilities li {
 
     /* Navigation adjustments */
     .navigation {
-        flex-direction: column; /* Stack navigation items */
-        padding: 10px; /* Reduce padding */
+        display: flex; /* Use flexbox for horizontal alignment */
+        justify-content: center; /* Center the navigation */
+        flex-direction: row; /* Align items horizontally */
+        gap: 20px
     }
 
     .navigation a {
+        padding: 10px 15px;
         margin: 5px 0; /* Vertical spacing for mobile */
         font-size: 1em; /* Smaller font size */
+    }
+
+    .about-me {
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center content horizontally */
+        text-align: center; /* Center text */
+        padding: 20px; /* Add some padding */
+    }
+
+    .about-me img {
+        width: 80%; /* Adjust the width of the image */
+        max-width: 300px; /* Limit maximum width */
+        margin-bottom: 20px; /* Add spacing below the image */
     }
 
     /* Header text adjustments */
