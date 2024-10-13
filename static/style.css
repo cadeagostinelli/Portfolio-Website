@@ -384,6 +384,9 @@ p {
     font-size: 1.1em;
     color: darkslategrey;
     transition: opacity 0.3s;
+    max-width: 100%; /* Ensure it fits within the container */
+    word-wrap: break-word; /* Break words to avoid overflow */
+    overflow-wrap: break-word;
 }
 
 
