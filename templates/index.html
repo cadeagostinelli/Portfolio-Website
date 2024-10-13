@@ -109,15 +109,38 @@
         </div>
     </div>
     <h1 class="projects-header">Experience</h1>
-    <div id="experience" class="experience-container">
-        <div class="job-buttons">
-            <button class="job-button" onclick="showDescription('job1')">Software Engineer Intern</button>
-            <button class="job-button" onclick="showDescription('job2')">STEM Teacher</button>
+    <div id="experience">
+        <div class="experience-container">
+            <div class="job-buttons">
+                <button class="job-button" onclick="showDescription('job1')">Software Engineer Intern</button>
+                <button class="job-button" onclick="showDescription('job2')">STEM Teacher</button>
+            </div>
+            <div class="job-description" id="job-description">
+                <!-- Display first job initially so it isn't empty -->
+                <h2 class="job-title">Software Engineer Intern<span class="company">@ Fractal Networks</span></h2>
+                <p class="dates">Jan 2024 - Apr 2024</p>
+                <ul class="job-responsibilities">
+                    <li>Collaborated with a team and led the development of over 50% of the backend production code for an event social media app utilizing 
+                    React, Django, and Node.js, resulting in a user-friendly interface with efficient backend integration</li>
+                    <li>Containerized applications with Docker to ensure consistent environments, and improved scalability through CI/CD processes, 
+                    including pull requests and resolving merge conflicts</li>
+                    <li>Implemented notification and phone verification functionality of the app using Twilio API and developed REST APIs 
+                    for seamless communication between frontend and backend services</li>
+                    <li>Developed unit tests for Fractal Network’s extensive systems and clients, achieving 90% average code coverage</li>
+                    <li>Improved Fractal Network’s asynchronous client by developing over 60+ unit tests with Python while collaborating with 
+                    senior software engineers to conduct code reviews and reimplement the client’s infrastructure</li>
+                </ul>
+            </div>
         </div>
-        <div class="job-description" id="job-description">
-            <p>Select a job to see the description.</p>
+    </div>
+    <div id="education">
+        <div class="education-container">
+            <h1 class="projects-header">Education</h1>
+            <div class="edu-description" id="edu-description">
+                <h2 class="edu-title"><span class="major">Computer Science</span></h2>
+            </div>
         </div>
-    </div>   
+    </div>
     <script src="../script.js"></script>
 </body>
 </html>

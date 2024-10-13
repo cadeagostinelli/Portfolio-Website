@@ -241,7 +241,7 @@ h1 {
 }
 
 .project-card-content p {
-    font-size: 14px;
+    font-size: 18px;
     margin-bottom: 10px;
     color: darkslategrey;
 }
@@ -279,49 +279,103 @@ h1 {
 .experience-container {
     max-width: 800px; /* Set a maximum width for better readability */
     margin: 0 auto; /* Center the container horizontally */
-    height: 400px; /* Extend height for more space */
+    height: 500px; /* Extend height for more space */
     padding: 20px; /* Add some padding */
-    background-color: #D8CBAF;
-    border-radius: 10px;
+    margin-top: 50px;
+    margin-bottom: 70px;
+    background-color: #D8CBAF; /* Same background as projects */
+    border-radius: 20px;
+
     box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16); /* Shadow for depth */
 }
 
+/* Centered header */
 h1 {
-    text-align: center; /* Center the header text */
-    margin-bottom: 20px; /* Add space below the header */
-    color: darkslategrey; /* Set header color */
+    text-align: center;
+    margin-bottom: 20px;
+    color: darkslategrey;
 }
 
 /* Job buttons styling */
 .job-buttons {
-    text-align: center; /* Center buttons */
-    margin-bottom: 20px; /* Add space below buttons */
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .job-button {
-    color: darkslategrey; /* Set button text color */
-    background-color: transparent; /* Background for buttons */
-    border: 1px solid darkslategrey; /* Button border color */
-    border-radius: 0.5rem; /* Rounded corners for buttons */
-    padding: 10px 15px; /* Add padding for buttons */
-    cursor: pointer; /* Change cursor on hover */
-    transition: background-color 0.3s; /* Smooth transition for hover */
+    color: darkslategrey;
+    background-color: transparent;
+    border: 1px solid darkslategrey;
+    border-radius: 0.5rem;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 .job-button:hover {
-    background-color: darkslategrey; /* Change background color on hover */
-    color: white; /* Change text color on hover */
+    background-color: darkslategrey;
+    color: white;
 }
 
 /* Job description styling */
 .job-description {
-    text-align: center; /* Center the description text */
-    font-size: 1.1em; /* Slightly larger text for readability */
-    color: darkslategrey; /* Set description text color */
+    text-align: left; /* Align left for description text */
+    font-size: 1.1em;
+    color: darkslategrey;
+    transition: opacity 0.3s;
+}
+
+/* Job title and company styling */
+.job-title {
+    font-size: 1.5em;
+    color: darkslategrey;
+    font-weight: bold;
+    margin-bottom: 5px; /* Add spacing between title and company */
+}
+
+.company {
+    font-size: 0.9em;
+    color: grey; /* Lighter text color for the company */
+    margin-left: 10px; /* Small space between title and company */
+}
+
+/* Dates styling */
+.dates {
+    font-size: 0.9em;
+    color: darkslategrey;
+    margin-bottom: 10px; /* Space between dates and description */
+}
+
+/* Bullet points for job responsibilities */
+ul.job-responsibilities {
+    list-style-type: disc; /* Default bullet points */
+    padding-left: 20px; /* Indent the bullet points */
+    margin-top: 10px;
+}
+
+ul.job-responsibilities li {
+    margin-bottom: 10px; /* Space between bullet points */
+    color: darkslategrey;
+}
+
+
+.fade-in {
+    opacity: 0;
 }
 
 
 
+/* EDUCATION */
+
+.education-container {
+    max-width: 1000px; /* Set a maximum width for better readability */
+    margin: 0 auto; /* Center the container horizontally */
+    height: 500px; /* Extend height for more space */
+    padding: 20px; /* Add some padding */
+    background-color: #D8CBAF; /* Same background as projects */
+    border-radius: 20px;
+    box-shadow: 0px 8px 56px rgba(15, 80, 100, 0.16); /* Shadow for depth */
+}
 
 
 
