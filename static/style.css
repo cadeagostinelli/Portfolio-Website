@@ -563,12 +563,29 @@ ul.job-responsibilities li {
         display: none; /* Hide on mobile */
     }
 
+    
+
     /* Navigation adjustments */
     .navigation {
-        display: flex; /* Use flexbox for horizontal alignment */
-        justify-content: center; /* Center the navigation */
-        flex-direction: row; /* Align items horizontally */
-        gap: 20px
+        display: none; /* Hide links by default on mobile */
+        flex-direction: column; /* Stack links vertically */
+        align-items: center; /* Center links */
+        width: 100%; /* Full width */
+        position: absolute; /* Position it absolutely */
+        top: 50px; /* Adjust based on your design */
+        left: 0;
+        background-color: #333; /* Background color for dropdown */
+        z-index: 1; /* Ensure it appears above other content */
+    }
+
+    .navigation.active {
+        display: flex; /* Show links when active */
+    }
+
+    .hamburger {
+        cursor: pointer; /* Change cursor to pointer */
+        font-size: 30px; /* Adjust size of the hamburger icon */
+        color: white; /* Color of the icon */
     }
 
     .navigation a {
