@@ -1,14 +1,31 @@
 
 /* For phone */
-@media (max-width: 600px) {
+/* Responsive adjustments */
+@media (max-width: 768px) {
     body {
-      font-size: 14px; /* Adjust font size for smaller screens */
+        font-size: 14px;
     }
+
     .container {
-      padding: 10px; 
+        flex-direction: column; /* Stack elements */
     }
-  }
-  
+
+    .card {
+        width: 90%; /* Full width on mobile */
+        margin: 10px auto; /* Center and space out */
+        padding: 10px;
+    }
+    
+    img {
+        max-width: 100%; /* Responsive images */
+        height: auto;
+    }
+    
+    /* Hide unnecessary elements */
+    .sidebar {
+        display: none; /* Hide on mobile */
+    }
+}
 
 /* Class for fade-in animation */
 .fade-move-in {
