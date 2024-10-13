@@ -567,25 +567,10 @@ ul.job-responsibilities li {
 
     /* Navigation adjustments */
     .navigation {
-        display: none; /* Hide links by default on mobile */
-        flex-direction: column; /* Stack links vertically */
-        align-items: center; /* Center links */
-        width: 100%; /* Full width */
-        position: absolute; /* Position it absolutely */
-        top: 50px; /* Adjust based on your design */
-        left: 0;
-        background-color: #333; /* Background color for dropdown */
-        z-index: 1; /* Ensure it appears above other content */
-    }
-
-    .navigation.active {
-        display: flex; /* Show links when active */
-    }
-
-    .hamburger {
-        cursor: pointer; /* Change cursor to pointer */
-        font-size: 30px; /* Adjust size of the hamburger icon */
-        color: white; /* Color of the icon */
+        display: flex; /* Use flexbox for horizontal alignment */
+        justify-content: center; /* Center the navigation */
+        flex-direction: row; /* Align items horizontally */
+        gap: 20px
     }
 
     .navigation a {
@@ -595,17 +580,24 @@ ul.job-responsibilities li {
     }
 
     .about-me {
-        display: flex; /* Use flexbox for alignment */
-        flex-direction: column; /* Stack image and text vertically */
-        align-items: center; /* Center content horizontally */
+        display: flex; /* Use flexbox layout */
+        flex-direction: column; /* Stack elements vertically */
+        align-items: center; /* Center align items */
         text-align: center; /* Center text */
-        padding: 20px; /* Add some padding */
+        padding: 10px; /* Add some padding for better spacing */
     }
 
+    /* Adjust paragraphs in About Me */
+    .about-me p {
+        margin: 5px 0; /* Reduce margin between paragraphs */
+        font-size: 1rem; /* Ensure font size is appropriate for mobile */
+    }
+
+    /* Adjust image in About Me */
     .about-me img {
-        width: 80%; /* Adjust the width of the image */
-        max-width: 300px; /* Limit maximum width */
-        margin-bottom: 20px; /* Add spacing below the image */
+        width: 100%; /* Make image full width */
+        max-width: 300px; /* Optional: limit max width of the image */
+        height: auto; /* Maintain aspect ratio */
     }
 
     /* Header text adjustments */

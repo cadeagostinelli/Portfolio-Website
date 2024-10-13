@@ -19,10 +19,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.getElementById("hamburger").addEventListener("click", function() {
-    var navLinks = document.querySelector(".navigation"); // Select the navigation links
-    navLinks.classList.toggle("active"); // Toggle 'active' class
-});
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const navLinks = document.querySelectorAll('nav a');
