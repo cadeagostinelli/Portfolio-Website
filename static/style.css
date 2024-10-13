@@ -1,32 +1,3 @@
-
-/* For phone */
-/* Responsive adjustments */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    .container {
-        flex-direction: column; /* Stack elements */
-    }
-
-    .card {
-        width: 90%; /* Full width on mobile */
-        margin: 10px auto; /* Center and space out */
-        padding: 10px;
-    }
-    
-    img {
-        max-width: 100%; /* Responsive images */
-        height: auto;
-    }
-    
-    /* Hide unnecessary elements */
-    .sidebar {
-        display: none; /* Hide on mobile */
-    }
-}
-
 /* Class for fade-in animation */
 .fade-move-in {
     opacity: 0;
@@ -562,4 +533,124 @@ ul.job-responsibilities li {
     height: 100vh;
     text-align: center;
     margin-top: 50px;
+}
+
+
+/* media queries to enhance mobile usage*/
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        flex-direction: column; /* Stack elements */
+    }
+
+    .card {
+        width: 90%; /* Full width on mobile */
+        margin: 10px auto; /* Center and space out */
+        padding: 10px;
+    }
+
+    img {
+        max-width: 100%; /* Responsive images */
+        height: auto;
+    }
+
+    /* Hide unnecessary elements */
+    .sidebar {
+        display: none; /* Hide on mobile */
+    }
+
+    /* Navigation adjustments */
+    .navigation {
+        flex-direction: column; /* Stack navigation items */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .navigation a {
+        margin: 5px 0; /* Vertical spacing for mobile */
+        font-size: 1em; /* Smaller font size */
+    }
+
+    /* Header text adjustments */
+    .header-text {
+        font-size: 1.5em; /* Smaller font size */
+        margin: 20px 0; /* Reduce margin */
+        padding: 10px; /* Reduce padding */
+    }
+
+    .header-text p {
+        font-size: 0.9rem; /* Smaller font size */
+    }
+
+    /* Button adjustments */
+    .button-container {
+        flex-direction: column; /* Stack buttons */
+    }
+
+    .button {
+        padding: 8px 16px; /* Smaller button padding */
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    .project-card {
+        width: 90%; /* Full width for project cards */
+        max-width: none; /* Remove max width */
+        margin: 10px auto; /* Center cards */
+    }
+
+    .projects-container {
+        flex-direction: column; /* Stack project cards */
+        align-items: center; /* Center items */
+    }
+
+    .project-card-content h3 {
+        font-size: 1.5em; /* Smaller heading size */
+    }
+
+    .project-card-content p {
+        font-size: 1em; /* Smaller paragraph size */
+    }
+
+    /* Experience section adjustments */
+    .experience-container {
+        padding: 10px; /* Reduce padding */
+        height: auto; /* Allow auto height */
+    }
+
+    .job-description {
+        font-size: 0.9em; /* Smaller font size */
+    }
+
+    /* Education adjustments */
+    .education-container {
+        padding: 10px; /* Reduce padding */
+    }
+
+    .edu-header {
+        font-size: 1.5em; /* Smaller font size */
+        margin-bottom: 15px; /* Reduce margin */
+    }
+
+    .university {
+        font-size: 1em; /* Smaller font size */
+    }
+
+    /* Extracurriculars adjustments */
+    .extracurricular-header {
+        font-size: 1em; /* Smaller font size */
+    }
+
+    /* Contact section adjustments */
+    .contact-top {
+        font-size: 2em; /* Smaller font size */
+    }
+
+    /* General adjustments for lists */
+    ul {
+        padding-left: 15px; /* Reduce left padding */
+    }
+
 }
