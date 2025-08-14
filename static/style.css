@@ -107,11 +107,12 @@ p {
 }
 
 .button-container {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    margin-top: 15px; 
+    display: flex;
+    justify-content: center; /* centers the whole group */
+    align-items: center;     /* aligns items vertically */
+    gap: 10px;               /* spacing between buttons */
 }
+
 
 .button {
     display: inline-block; 
@@ -135,28 +136,26 @@ p {
 }
 
 .icon-button {
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    width: 40px;
+    display: flex;
+    align-items: center;     /* vertical centering */
+    justify-content: center; /* horizontal centering */
+    width: 40px;             /* make button a square */
     height: 40px;
-    margin: 0 5px;
-    border: 2px solid #c0b7a2;
-    border-radius: 50%;
-    color: #c0b7a2;
-    font-size: 20px;
-    transition: background-color 0.3s, color 0.3s;
-    background-color: transparent;
+    border-radius: 50%;      /* circle shape */
+    background-color: #333;  /* example background */
+    color: white;
     text-decoration: none;
+    font-size: 1.2rem;        /* icon size */
+    transition: background-color 0.3s;
 }
 
 .icon-button i {
-    vertical-align: middle;
+    display: block; /* removes inline whitespace quirks */
+    line-height: 1;  /* keeps icon vertically tight */
 }
 
 .icon-button:hover {
-    background-color: #c0b7a2;
-    color: white;
+    background-color: #555; /* hover effect */
 }
 
 
@@ -317,7 +316,7 @@ p {
 .experience-container {
     max-width: 800px; 
     margin: 0 auto; 
-    height: 500px; 
+    height: auto; 
     padding: 20px; 
     margin-top: 50px;
     margin-bottom: 70px;
@@ -622,8 +621,10 @@ ul.job-responsibilities li {
     }
 
     .button {
-        padding: 8px 16px; /* Smaller button padding */
-        font-size: 0.9em; /* Smaller font size */
+        display: flex;
+        align-items: center;    /* vertical centering */
+        justify-content: center; /* horizontal centering */
+        gap: 8px;               /* space between icon and text */
     }
 
     .project-card {
@@ -648,10 +649,11 @@ ul.job-responsibilities li {
     /* Experience section adjustments */
     .experience-container {
         padding: 10px; /* Reduce padding */
-        height: auto; /* Allow auto height */
+        height: auto !important; /* Allow auto height */
     }
 
     .job-description {
+        height: auto;
         font-size: 0.9em; /* Smaller font size */
     }
 
