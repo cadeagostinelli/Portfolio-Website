@@ -227,7 +227,7 @@ text-align: center;
 .projects-container {
 display: flex;
 flex-wrap: wrap; 
-justify-content: flex-start; 
+justify-content: center; 
 gap: 20px;
 }
 .project-card {
@@ -672,6 +672,7 @@ ul.job-responsibilities li {
     }
 
 }
+
 
 
 
