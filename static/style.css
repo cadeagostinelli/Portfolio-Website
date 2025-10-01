@@ -238,6 +238,7 @@ background-color: #D8CBAF;
 overflow: hidden;
 box-shadow: 0 2px 4px rgba(10, 80, 100, 0.16);
 border-radius: 10px;
+margin-bottom: 30px;
 transition: transform 0.3s ease, box-shadow 0.3s ease;
 margin: 0; 
 }
@@ -303,7 +304,7 @@ margin-top: 10px;
     margin: 0 auto; 
     height: auto; 
     padding: 20px; 
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 70px;
     background-color: #D8CBAF; 
     border-radius: 20px;
@@ -672,6 +673,7 @@ ul.job-responsibilities li {
     }
 
 }
+
 
 
 
